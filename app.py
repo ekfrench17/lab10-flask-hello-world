@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello World from Elaine French in 3008'
+    return 'Hello World from Elaine French in 3308'
 
 @app.route('/db_test')
 def test():
@@ -43,7 +43,7 @@ def insert():
         ''')
     conn.commit()
     conn.close()
-    return "Basketball Table Populated"
+    return "Basketball Table Successfully Populated"
 
 @app.route('/db_select')
 def select():
